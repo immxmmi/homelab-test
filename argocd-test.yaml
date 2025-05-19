@@ -11,8 +11,9 @@ spec:
     targetRevision: 15.9.1
     helm:
       values: |
-        service:
-          type: LoadBalancer
+        image:
+          repository: nginx
+          tag: 1.21.6
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx
