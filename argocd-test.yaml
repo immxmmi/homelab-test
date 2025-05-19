@@ -6,14 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: nginx
-    targetRevision: 15.9.1
-    helm:
-      values: |
-        image:
-          repository: nginx
-          tag: 1.21.6
+    repoURL: https://helm.github.io/examples
+    chart: example-chart
+    targetRevision: 0.1.0
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx
